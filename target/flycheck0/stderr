@@ -1,0 +1,45 @@
+   0.058249976s  INFO prepare_target{force=false package_id=rust_os v0.1.0 (/home/tatsuya/Rust_os) target="rust_os"}: cargo::core::compiler::fingerprint: fingerprint error for rust_os v0.1.0 (/home/tatsuya/Rust_os)/Check { test: true }/TargetInner { name: "rust_os", doc: true, ..: with_path("/home/tatsuya/Rust_os/src/main.rs", Edition2021) }
+   0.058270723s  INFO prepare_target{force=false package_id=rust_os v0.1.0 (/home/tatsuya/Rust_os) target="rust_os"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/tatsuya/Rust_os/target/x86_64-unknown-none/debug/.fingerprint/rust_os-e56ba460d114c95c/test-bin-rust_os`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   6: cargo::ops::cargo_compile::compile_ws
+   7: cargo::ops::cargo_compile::compile_with_exec
+   8: cargo::ops::cargo_compile::compile
+   9: cargo::commands::check::exec
+  10: <cargo::cli::Exec>::exec
+  11: cargo::main
+  12: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  13: std::rt::lang_start::<()>::{closure#0}
+  14: <&dyn core::ops::function::Fn<(), Output = i32> + core::panic::unwind_safe::RefUnwindSafe + core::marker::Sync as core::ops::function::FnOnce<()>>::call_once
+             at /rustc/17584a181979f04f2aaad867332c22db1caa511a/library/core/src/ops/function.rs:287:21
+  15: std::panicking::catch_unwind::do_call::<&dyn core::ops::function::Fn<(), Output = i32> + core::panic::unwind_safe::RefUnwindSafe + core::marker::Sync, i32>
+             at /rustc/17584a181979f04f2aaad867332c22db1caa511a/library/std/src/panicking.rs:581:40
+  16: std::panicking::catch_unwind::<i32, &dyn core::ops::function::Fn<(), Output = i32> + core::panic::unwind_safe::RefUnwindSafe + core::marker::Sync>
+             at /rustc/17584a181979f04f2aaad867332c22db1caa511a/library/std/src/panicking.rs:544:19
+  17: std::panic::catch_unwind::<&dyn core::ops::function::Fn<(), Output = i32> + core::panic::unwind_safe::RefUnwindSafe + core::marker::Sync, i32>
+             at /rustc/17584a181979f04f2aaad867332c22db1caa511a/library/std/src/panic.rs:359:14
+  18: std::rt::lang_start_internal::{closure#0}
+             at /rustc/17584a181979f04f2aaad867332c22db1caa511a/library/std/src/rt.rs:175:24
+  19: std::panicking::catch_unwind::do_call::<std::rt::lang_start_internal::{closure#0}, isize>
+             at /rustc/17584a181979f04f2aaad867332c22db1caa511a/library/std/src/panicking.rs:581:40
+  20: std::panicking::catch_unwind::<isize, std::rt::lang_start_internal::{closure#0}>
+             at /rustc/17584a181979f04f2aaad867332c22db1caa511a/library/std/src/panicking.rs:544:19
+  21: std::panic::catch_unwind::<std::rt::lang_start_internal::{closure#0}, isize>
+             at /rustc/17584a181979f04f2aaad867332c22db1caa511a/library/std/src/panic.rs:359:14
+  22: std::rt::lang_start_internal
+             at /rustc/17584a181979f04f2aaad867332c22db1caa511a/library/std/src/rt.rs:171:5
+  23: main
+  24: <unknown>
+  25: __libc_start_main
+  26: <unknown>
+    Checking rust_os v0.1.0 (/home/tatsuya/Rust_os)
+error: could not compile `rust_os` (bin "rust_os" test) due to 1 previous error; 4 warnings emitted

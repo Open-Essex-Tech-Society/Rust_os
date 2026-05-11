@@ -1,0 +1,1 @@
+/home/tatsuya/Rust_os/target/x86_64-unknown-none/debug/rust_os: /home/tatsuya/Rust_os/src/allocator.rs /home/tatsuya/Rust_os/src/gdt.rs /home/tatsuya/Rust_os/src/interrupts.rs /home/tatsuya/Rust_os/src/main.rs /home/tatsuya/Rust_os/src/memory.rs /home/tatsuya/Rust_os/src/serial.rs /home/tatsuya/Rust_os/src/shell.rs /home/tatsuya/Rust_os/src/vga_buffer.rs
