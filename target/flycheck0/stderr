@@ -1,5 +1,5 @@
-   0.083820452s  INFO prepare_target{force=false package_id=rust_os v0.1.0 (/home/tatsuya/Rust_os) target="rust_os"}: cargo::core::compiler::fingerprint: fingerprint error for rust_os v0.1.0 (/home/tatsuya/Rust_os)/Check { test: true }/TargetInner { name: "rust_os", doc: true, ..: with_path("/home/tatsuya/Rust_os/src/main.rs", Edition2021) }
-   0.083885335s  INFO prepare_target{force=false package_id=rust_os v0.1.0 (/home/tatsuya/Rust_os) target="rust_os"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/tatsuya/Rust_os/target/x86_64-unknown-none/debug/.fingerprint/rust_os-e56ba460d114c95c/test-bin-rust_os`
+   0.079613240s  INFO prepare_target{force=false package_id=rust_os v0.1.0 (/home/tatsuya/Rust_os) target="rust_os"}: cargo::core::compiler::fingerprint: fingerprint error for rust_os v0.1.0 (/home/tatsuya/Rust_os)/Check { test: true }/TargetInner { name: "rust_os", doc: true, ..: with_path("/home/tatsuya/Rust_os/src/main.rs", Edition2021) }
+   0.079633773s  INFO prepare_target{force=false package_id=rust_os v0.1.0 (/home/tatsuya/Rust_os) target="rust_os"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/tatsuya/Rust_os/target/x86_64-unknown-none/debug/.fingerprint/rust_os-45543e47901929bf/test-bin-rust_os`
 
 Caused by:
     No such file or directory (os error 2)
@@ -42,4 +42,4 @@ Stack backtrace:
   25: __libc_start_main
   26: <unknown>
     Checking rust_os v0.1.0 (/home/tatsuya/Rust_os)
-error: could not compile `rust_os` (bin "rust_os" test) due to 1 previous error; 4 warnings emitted
+error: could not compile `rust_os` (bin "rust_os" test) due to 1 previous error
